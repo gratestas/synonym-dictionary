@@ -1,5 +1,5 @@
 # Synonym Dictionary
-This dictionary validates wether two given queries are synonyms either by symmetric or transitive relations by implementing the *graph data structure* and *BFS algorithm.*
+This dictionary validates whether two given queries are synonyms either by symmetric or transitive relations by implementing the *graph data structure* and *BFS algorithm.*
 
 ## Rules
 Given queries are synonyms if
