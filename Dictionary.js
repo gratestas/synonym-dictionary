@@ -56,15 +56,15 @@ class Dictionary extends Graph {
   _traverse(statusMap, from) {
     let queue = [];
     queue.push(from);
+    const linkedWords = this._getAdjacentList();
 
     while (queue.length) {
       const currentWord = queue.shift();
-      const linkedWords = this._getAdjacentList();
       statusMap[currentWord] = this.STATUS.CURRENT;
 
       for (let word of linkedWords[currentWord]) {
         if (statusMap[word] === this.STATUS.UNVISITED) {
-          statusMap[currentWord] = this.STATUS.CURRENT;
+          statusMap[word] = this.STATUS.CURRENT;
           queue.push(word);
         }
       }
