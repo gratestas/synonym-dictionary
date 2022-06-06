@@ -12,13 +12,7 @@ class Graph {
   }
 
   addEdge(vertex1, vertex2) {
-    if (
-      vertex1 !== null &&
-      vertex2 !== null &&
-      vertex1.toLowerCase() !== vertex2.toLowerCase()
-    ) {
-      vertex1 = vertex1.toLowerCase();
-      vertex2 = vertex2.toLowerCase();
+    if (vertex1 !== null && vertex2 !== null) {
       this.addVertex(vertex1);
       this.addVertex(vertex2);
 
