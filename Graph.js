@@ -2,13 +2,6 @@ class Graph {
   constructor() {
     this.vertices = new Set();
     this.adjacentList = new Map();
-
-    this.SYNONYMS = Object.freeze({ true: "synonyms", false: "different" });
-    this.STATUS = Object.freeze({
-      VISITED: "visited",
-      CURRENT: "current",
-      UNVISITED: "unvisited",
-    });
   }
 
   addVertex(vertex) {
