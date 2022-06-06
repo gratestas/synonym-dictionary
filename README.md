@@ -27,7 +27,7 @@ The graph structure is implemented using `adjacencyList` and `hash tables` to es
 ## Dictionary
 Dıctıonary inherits the `Graph` class. 
 * Each word in the dictionary is a simple vertex (or node) that contains the word as its value. 
-* Each pair of words represents an edge in the graph.
+* Each added pair of words are connected by an edge in the graph.
 * the bread-first search is implemented in `traverse` function.
 
 A special `STATUS` enum property is used to keep track of wether a word in a list of neighbor words connected to the poiner word is visited or not. 
