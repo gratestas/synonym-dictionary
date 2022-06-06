@@ -59,7 +59,7 @@ class Dictionary extends Graph {
 
     while (queue.length) {
       const currentWord = queue.shift();
-      const linkedWords = this._getAdjacentList(currentWord);
+      const linkedWords = this._getAdjacentList();
       statusMap[currentWord] = this.STATUS.CURRENT;
 
       for (let word of linkedWords[currentWord]) {
