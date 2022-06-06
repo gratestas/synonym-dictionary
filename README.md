@@ -16,7 +16,7 @@ if a = b => b = a
 ```
 if a = b && b = c  => a = c
 ```
-#### 4. Non-case sensitive
+#### 4. Case insensitive
 
 ## Graph
 The graph structure is implemented using `adjacencyList` and `hash tables` to establish and track down complex relationships between different words.
