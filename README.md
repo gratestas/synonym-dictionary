@@ -1,5 +1,5 @@
 # Synonym Dictionary
-This dictionary validates wether two given queries are synonyms either by symmetric or transitive relations by implementing the *graph data structure* and *BFS algorithm.*
+This dictionary validates whether two given queries are synonyms either by symmetric or transitive relations by implementing the *graph data structure* and *BFS algorithm.*
 
 ## Rules
 Given queries are synonyms if
@@ -16,7 +16,7 @@ if a = b => b = a
 ```
 if a = b && b = c  => a = c
 ```
-#### 4. Non-case sensitive
+#### 4. Case insensitive
 
 ## Graph
 The graph structure is implemented using `adjacencyList` and `hash tables` to establish and track down complex relationships between different words.
@@ -30,7 +30,7 @@ Dıctıonary inherits the `Graph` class.
 * Each added pair of words are connected by an edge in the graph.
 * the bread-first search is implemented in `traverse` function.
 
-A special `STATUS` enum property is used to keep track of wether a word in a list of neighbor words connected to the poiner word is visited or not. 
+A special `STATUS` enum property is used to keep track of wether a word in a list of neighbor words connected to the pointer word is visited or not. 
 ```javascript
 STATUS = Object.freeze({
       VISITED: "visited",
