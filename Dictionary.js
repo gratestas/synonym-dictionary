@@ -22,14 +22,14 @@ class Dictionary extends Graph {
     query2 = query2.toLowerCase();
 
     if (query1 === query2) return this.SYNONYMS.true;
-    if (this._doesRelationExist(query1, query2)) return this.SYNONYMS.false;
+    if (this._areUnrelated(query1, query2)) return this.SYNONYMS.false;
     if (this._areSymmetric(query1, query2)) return this.SYNONYMS.true;
     if (this._areTransitive(query1, query2)) return this.SYNONYMS.true;
 
     return this.SYNONYMS.false;
   }
 
-  _doesRelationExist(query1, query2) {
+  _areUnrelated(query1, query2) {
     return !this.adjacentList.has(query1) || !this.adjacentList.has(query2);
   }
   _areSymmetric(query1, query2) {
